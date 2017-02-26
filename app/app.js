@@ -5,54 +5,62 @@ var temba = angular.module('myApp', [
   'ui.bootstrap',
 
   //internal
+  // 'BlogCtrl',
+  // 'BudgetCtrl',
   'dateDirective'
+  // 'FAQCtrl',
+  // 'HomeCtrl',
+  // 'MissionCtrl',
+  // 'ProjectsCtrl',
+  // 'PurposeCtrl',
+  // 'RealCostsCtrl'
 ]);
-  temba.config(function($stateProvider, $urlRouteProvider) {
+  temba.config(function($stateProvider, $urlRouterProvider) {
 
     $stateProvider
       .state('home', {
         url: '/',
-        templateUrl: 'templates/home-tmpl.html',
+        templateUrl: 'app/templates/home-tmpl.html',
         controller: 'HomeCtrl as home'
       })
       .state('budgeting-101', {
         url: '/budgeting-101',
-        templateUrl: 'templates/budgeting-101-tmpl.html',
+        templateUrl: 'app/templates/budgeting-101-tmpl.html',
         controller: 'BudgetCtrl as budget'
       })
-      .state('real-cost', {
-        url: '/real-cost',
-        templateUrl: 'templates/real-cost-tmpl.html',
-        controller: 'RealCostCtrl as real-cost'
+      .state('real-costs', {
+        url: '/real-costs',
+        templateUrl: 'app/templates/real-costs-tmpl.html',
+        controller: 'RealCostsCtrl as real-costs'
       })
       .state('mission', {
         url: '/mission',
-        templateUrl: 'templates/mission-tmpl.html',
+        templateUrl: 'app/templates/mission-tmpl.html',
         controller: 'MissionCtrl as mission'
       })
       .state('purpose', {
         url: '/purpose',
-        templateUrl: 'templates/purpose-tmpl.html',
+        templateUrl: 'app/templates/purpose-tmpl.html',
         controller: 'PurposeCtrl as purpose'
       })
       .state('projects', {
         url: '/projects',
-        templateUrl: 'templates/projects-tmpl.html',
+        templateUrl: 'app/templates/projects-tmpl.html',
         controller: 'ProjectsCtrl as projects'
       })
       .state('faq', {
         url: '/faq',
-        templateUrl: 'templates/faq-tmpl.html',
+        templateUrl: 'app/templates/faq-tmpl.html',
         controller: 'FAQCtrl as faq'
       })
       .state('blog', {
         url: '/blog',
-        templateUrl: 'templates/blog-tmpl.html',
+        templateUrl: 'app/templates/blog-tmpl.html',
         controller: 'BlogCtrl as blog'
       });
 
     //default routing
-    $urlRouteProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/');
   });
 
   // angular.module('myApp').controller('MainCtrl', function($scope) {
