@@ -32,7 +32,7 @@ var temba = angular.module('myApp', [
       .state('real-costs', {
         url: '/real-costs',
         templateUrl: 'app/templates/real-costs-tmpl.html',
-        controller: 'RealCostsCtrl as real-costs'
+        controller: 'RealCostsCtrl as realCosts'
       })
       .state('mission', {
         url: '/mission',
