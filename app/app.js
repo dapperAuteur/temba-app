@@ -7,9 +7,10 @@ var temba = angular.module('myApp', [
   //internal
   // 'BlogCtrl',
   // 'BudgetCtrl',
-  'dateDirective'
+  'dateDirective',
   // 'FAQCtrl',
   // 'HomeCtrl',
+  'iSHelpFormDirective'
   // 'MissionCtrl',
   // 'ProjectsCtrl',
   // 'PurposeCtrl',

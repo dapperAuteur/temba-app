@@ -15,7 +15,7 @@ angular.module('dateDirective', [])
   }])
   .directive('dates', function(){
     return {
-      template: '<h1>Today is {{ date.currentDay }}, {{ date.currentMonth }} {{ date.currentDayOfMonth }} of {{ date.currentYear}}</h1>'
+      templateUrl: 'app/templates/date-tmpl.html'
     };
   });
   var currentDate = new Date();
