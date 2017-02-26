@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html data-ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<title>TEMBA</title>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!--   dependencies -->
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-route.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-resource.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.0.1/ui-bootstrap-tpls.min.js"></script>
+		<script src="//unpkg.com/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+	<!-- my scripts -->
+		<script type="text/javascript" src="/app/app.js"></script>
+		<script type="text/javascript" src="/app/directives/date.js"></script>
+
+
+	</head>
+	<body>
+
+		<nav class="navbar navbar-default navbar-inverse" role="navigation">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">The Elementary MBA</a>
+		    </div>
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li><a data-ui-sref="budgeting-101">Budgeting 101</a></li>
+						<li><a data-ui-sref="real-costs">Real Costs</a></li>
+		        <li><a data-ui-sref="mission">Mission</a></li>
+		        <li><a data-ui-sref="purpose">Purpose</a></li>
+		        <li><a data-ui-sref="projects">Projects</a></li>
+		        <li><a data-ui-sref="faq">FAQ</a></li>
+		        <li><a data-ui-sref="blog">Blog</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		<div class="container">
+			<div ng-controller="dateController">
+				<div dates></div>
+			</div>
+
+			<div ng-view>
+			</div>
+
+
+
+
+		  <h1>{{2+3}}= 3 + 2</h1>
+		</div>
+
+	<!--   my scripts -->
+
+
+
+	</body>
+</html>
