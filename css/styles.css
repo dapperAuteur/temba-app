@@ -1,0 +1,456 @@
+body,
+
+html {
+
+	min-height: 100%;
+
+	font-family: abril-fatface;
+
+	font-style: normal;
+
+	font-weight: 400;
+
+}
+
+
+
+body {
+	background-image: url(http://www.awesomewebstore.com/img/shades-of-blue-legacy.png);
+	background-size: cover;
+	text-shadow: 0px 0px;
+
+}
+
+
+
+.top-header {
+
+	width: 100%;
+
+	max-width: 960px;
+
+	font-size: 10em;
+
+	color: #fff;
+
+	text-shadow: 2px 2px 0 rgba(0, 0,0, .7);
+
+	margin-top: 79px;
+
+	margin-right: auto;
+
+	margin-left: auto;
+
+	margin-bottom: 40px;
+
+	text-align: center;
+
+	font-size: 3em;
+
+}
+
+.aws-mission {
+
+    width: 100%;
+
+    max-width: 960px;
+
+    font-size: 2em;
+
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+
+    color: #fff;
+
+    text-shadow: 1px 1px 0 rgba(0, 0,0, .7);
+
+    margin: 40px auto;
+
+    padding-left: 25px;
+
+    padding-right: 25px;
+
+    text-align: justify;
+
+    font-variant: small-caps;
+
+}
+
+
+
+.awefulheader {
+
+  width: 100%;
+
+  max-width:960px;
+
+  font: 4em "Amatic SC", cursive;
+
+  color: #fff;
+
+  text-shadow: 2px 2px 0 rgba(0, 0,0, .7);
+
+  margin: 40px auto;
+
+  text-align: center;
+
+}
+
+.aweform {
+
+    width: 100%;
+
+    max-width: 960px;
+
+    font-size: 2em;
+
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+
+    color: #000;
+
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, .7);
+
+    margin: 40px auto;
+
+    text-align: center;
+
+    font-variant: small-caps;
+
+}
+
+.awebtn {
+
+  color: #000;
+
+  font: 3em;
+
+  text-align: center;
+
+  text-shadow: 2px 2px 0 rgba(255, 255, 255, .7);
+
+}
+
+
+
+.awecommunication {
+	width: 100%;
+	max-width: 960px;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	color: #fff;
+	text-shadow: 1px 1px 0 rgba(0, 0,0, .7);
+	margin: 40px auto;
+	text-align: center;
+	font-weight: bold;
+	font-variant: small-caps;
+	font-size: 50px;
+
+}
+
+.navbar {
+
+  background: rgba(0,0,0,0.5);
+
+}
+
+.navbar li {
+
+    color: #F0791E;
+
+}
+
+.awefulfooter {
+
+    color: #000000;
+
+}
+
+.input::-webkit-input-placeholder {
+
+color: red !important;
+
+}
+
+
+
+.input:-moz-placeholder { /* Firefox 18- */
+
+color: red !important;
+
+}
+
+
+
+.input::-moz-placeholder {  /* Firefox 19+ */
+
+color: red !important;
+
+}
+
+
+
+.input:-ms-input-placeholder {
+
+color: red !important;
+
+}
+
+
+
+
+
+.navbar-default-fixed {
+
+}
+
+.navbar-default {
+
+}
+
+.navbar-fixed-top {
+
+}
+
+.awerow {
+
+	margin-right: 50px;
+
+	margin-left: 50px;
+
+	padding-right: auto;
+
+	padding-left: auto;
+
+	font-weight: bolder;
+
+	text-shadow: 1px 1px #D5D3D3;
+
+}
+
+.awegood {
+
+    font-weight: bolder;
+
+    text-align: center;
+
+    font-size: 3em;
+
+}
+
+
+
+.open .dropdown-menu {
+
+    display: block;
+
+}
+
+.aweip4 {
+
+}
+
+.aweip {
+	margin-bottom: 60px;
+	text-align: center;
+	font-variant: small-caps;
+	font-size: medium;
+
+}
+
+.awecopy {
+
+	font-size: 15px;
+
+}
+
+.row {
+
+}
+
+.bgimage2 {
+
+	position: relative;
+
+	width: 100%;
+
+	border-width: 0px;
+
+	border-style: none;
+
+	border-radius: 10px;
+
+	-webkit-box-shadow: 0 0;
+
+	box-shadow: 0 0;
+
+}
+
+
+
+h2 {
+
+	position: absolute;
+
+	top: 200px;
+
+	left: 0;
+
+	width: 100%;
+
+}
+
+
+
+h3 {
+	position: absolute;
+	top: 1px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	text-shadow: 1px 1px #000000;
+	color: rgba(202,53,148,1.00);
+
+}
+
+.awepixtext {
+
+	position: absolute;
+
+	top: 90px;
+
+	left: 0;
+
+	width: 100%;
+
+	padding-left: 10px;
+
+	padding-right: 10px;
+
+	margin-left: auto;
+
+	margin-right: auto;
+
+	text-align: left;
+
+}
+
+.picmonic {
+
+	text-shadow: 1px 1px #000;
+
+	font-size: large;
+
+	margin-right: 10px;
+
+	margin-left: 10px;
+
+	padding-right: auto;
+
+	padding-left: auto;
+
+	color: #FFFFFF;
+
+	text-align: center;
+
+}
+
+
+
+@media (max-width : 1076px ){
+
+}
+
+
+
+@media (max-width: 480px){
+
+	.aws-mission {
+
+    width: 100%;
+
+    max-width: 960px;
+
+    font-size: 1.5em;
+
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+
+    color: #fff;
+
+    text-shadow: 1px 1px 0 rgba(0, 0,0, .7);
+
+    margin: 40px auto;
+
+    padding-left: 25px;
+
+    padding-right: 25px;
+
+    font-style: normal;
+
+    font-variant: small-caps;
+
+    font-weight: bolder;
+
+}
+
+
+
+.awefulheader {
+
+  width: 100%;
+
+  max-width:960px;
+
+  font: 4em "Amatic SC", cursive;
+
+  color: #fff;
+
+  text-shadow: 2px 2px 0 rgba(0, 0,0, .7);
+
+  margin: 40px auto;
+
+  text-align: center;
+
+}
+
+}
+
+.btn-color {
+
+    background-color: #F0791E;
+
+}
+
+.header-footer_font {
+
+    color: #F0791E;
+
+    font-variant: small-caps;
+
+}
+practicing_the_elementary_mba_in_a_small_group_at_hirsch_academy_teamcfa.pngpracticing_the_elementary_mba_in_a_small_group_at_hirsch_academy_teamcfa.pngpracticing_the_elementary_mba_in_a_small_group_at_hirsch_academy_teamcfa.png
+.carousel-text {
+}
+.container-fluid {
+	padding-right: auto;
+	padding-left: auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+50.62.68.150.62.68.150.62.68.1.center-image {
+}
+
+@media screen and (max-width:600px){
+.awecommunication {
+	font-size: 40px;
+}
+
+}
+
+@media screen and (max-width:500px){
+}
+
+@media (max-width: 361px){
+.awecommunication {
+	font-size: 29px;
+}
+
+
+}
