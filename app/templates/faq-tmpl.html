@@ -1,14 +1,17 @@
-<div ng-controller="faqController">
+<!-- <div ng-controller="faqController as f">
   <div ng-repeat='question in questions'>
-    <h2>{{ question.answer }}</h2>
-  </div>
+    <h2>{{ f.faqQ.id.question }}</h2>
+    <h2>{{ f.faqQ.question }}</h2>
 
+  </div>
+  <h2>{{ f.faqQ[0].question }}</h2>
+  <h2>{{ f.faqQ[0].answer }}</h2>
   <div faqD></div>
-</div>
+</div> -->
 <div ng-controller="isHelpFormController">
   <div is-help-form></div>
 </div>
-<!-- <div class="container-fluid aws-mission">
+<div class="container-fluid aws-mission">
   <a name="faq"></a><p>FAQ: </p>
   <p>Why does it work?</p>
   <p>It works because students learn with better practice.<br>
@@ -28,4 +31,4 @@
   <p>Do you offer the program to individual children and/or small groups?</p>
   <p>Yes. Please email/call to learn more. </p>
   <hr>
-</div> -->
+</div>

@@ -1,4 +1,66 @@
-<h1>This page will show the results from the true costs formula with information about where I got the formula from.</h1>
+<p style="text-align: justify;">Once you’ve inputted your numbers, click the button below to see the hours of work (a/k/a life energy, a/k/a agonizing toil) it takes to pay for your expenditure:</p>
+<!-- table is below -->
+<table style="height: 171px;" width="620">
+  <tbody>
+    <tr>
+      <td width="420"><strong>1. Your Annual Gross Salary:</strong></td>
+      <td width="200"><input id="myGrossSal" type="number" value=" "></td>
+    </tr>
+    <tr class="alt-table-row">
+      <td><strong>2. Your Top Marginal Federal Tax Rate (if 39.6%, input 39.6):</strong></td>
+      <td><input id="myFedPercent" type="number" value=" "></td>
+    </tr>
+    <tr>
+      <td><strong>3. Your Top Marginal State + Local Tax Rate (if 6.93%, input 6.93):</strong></td>
+      <td><input id="myStLocRate" type="number" value=" "></td>
+    </tr>
+    <tr class="alt-table-row">
+      <td><strong>4. Your Total Hours Worked Per Year:</strong></td>
+      <td><input id="myWorkHrs" type="number" value=" "></td>
+    </tr>
+    <tr>
+      <td><strong>5. Your Total Hours Commuting Per Year:</strong></td>
+      <td><input id="myCommuteHrs" type="number" value=" "></td>
+    </tr>
+    <tr class="alt-table-row">
+      <td><strong>6. The Total&nbsp;Cost of Your Expenditure (with any sales taxes):</strong></td>
+      <td><strong><input id="myExpenditure" type="number" value=" "></strong></td>
+    </tr>
+  </tbody>
+</table>
+<td><strong><input id="myExpenditure" type="number" value=" " /></strong></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">Once you've inputted your numbers, click the button below to see the hours of work (a/k/a life energy, a/k/a agonizing toil) it takes to pay for your expenditure:</p>
+<p><button onclick = "myFunction();" /><strong>Calculate Labor Cost in Working Hours</strong></button></p>
+<script>
+  function myFunction() {
+      var a = document.getElementById("myGrossSal").value;
+      var b = a * (document.getElementById("myFedPercent").value / 100);
+      var c = a * (document.getElementById("myStLocRate").value / 100);
+      var d = a * (.0145 * 10000 / 10000);
+      var e = ' ';
+      if (a < 127200) {
+          e = .062;
+      } else {
+          e = 0;
+      }
+      var f = a * (e * 10000 / 10000);
+      var g = a - (b + c + d + f);
+      var h = +document.getElementById("myWorkHrs").value +
+      +document.getElementById("myCommuteHrs").value ;
+      var i = g / h ;
+      var j = document.getElementById("myExpenditure").value;
+      var k = j / i;
+      document.getElementById("finalAnswer").innerHTML = k.toFixed(2) + " hours of labor" ;
+  }
+
+</script>
 <div ng-controller="isHelpFormController">
   <div is-help-form></div>
+</div>
+<div>
+  <p>This page will show the results from the true costs formula with information about <a href="http://www.frugalfringe.com/calculators/labor-cost-calculator-the-working-hours-it-takes-to-buy-anything/">where I got the formula from</a>.</p>
+  <p>Here's a link to the <a href="http://taxfoundation.org/article/2017-tax-brackets">2017 federal tax brackets</a>.</p>
 </div>
