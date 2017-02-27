@@ -1,5 +1,9 @@
 <div ng-controller="faqController">
-  <div faq-d></div>
+  <div ng-repeat='question in questions'>
+    <h2>{{ question.answer }}</h2>
+  </div>
+
+  <div faqD></div>
 </div>
 <div ng-controller="isHelpFormController">
   <div is-help-form></div>
