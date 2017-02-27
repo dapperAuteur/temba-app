@@ -14,10 +14,10 @@ angular.module('faqDirective', [])
         // // console.log(response.data[0]);
         // console.log(response.data[1].question);
          faqData.faqQ = response.data;
-        //  console.log(faqData.faqQ[1].question);
-         for(var i = 0; i < faqData.faqQ.length; i++){
-           console.log(faqData.faqQ[i]);
-         }
+         console.log(faqData.faqQ);
+        //  for(var i = 0; i < faqData.faqQ.length; i++){
+        //    console.log(faqData.faqQ[i]);
+        //  }
          console.log(faqData.faqQ.question);
 
       }, function errorCallback(response) {
