@@ -9,6 +9,7 @@ var temba = angular.module('myApp', [
   // 'BudgetCtrl',
   'dateDirective',
   // 'FAQCtrl',
+  'faqDirective',
   // 'HomeCtrl',
   'iSHelpFormDirective'
   // 'MissionCtrl',

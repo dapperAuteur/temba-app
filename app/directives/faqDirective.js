@@ -1,14 +1,14 @@
 'use strict'
-angular.module('iSHelpFormDirective', [])
-  .controller('isHelpFormController', ['$scope', function($scope){
+angular.module('faqDirective', [])
+  .controller('faqController', ['$scope', function($scope){
     $scope.isForm = false;
     $scope.toggle = function() {
       // console.log("am I working?");
       $scope.isForm = !$scope.isForm;
     };
   }])
-  .directive('isHelpForm', function() {
+  .directive('faqD', function() {
     return {
-      templateUrl: 'app/templates/form-tmpl.html'
+      templateUrl: 'app/templates/faq-tmpl.html'
     };
   });
